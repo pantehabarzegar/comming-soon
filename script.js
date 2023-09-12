@@ -14,7 +14,7 @@
 
 
             const textElement = document.querySelector('#text')
-            ityped.init(textElement, {  strings: ['dolor sit amet.', 'dolor sit','dolor sit amet.',] });
+            ityped.init(textElement, {  strings: ['Unsere Website .', 'wird bald verfügbar sein.',' Bitte besuchen Sie uns bald wieder!',] });
 // card-map
 
 var map = L.map('map').setView([51.505, -0.09], 13);
