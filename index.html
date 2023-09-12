@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/ityped@1.0.3"></script>
+
+    <script src="script.js"></script>
+</head>
+
+<body class="dakr-bg-body-dark p-4">
+
+    <!-- Switch Dark Mode -->
+    <div class="d-flex align-items-center">
+        <i class="bi bi-brightness-low fs-4 ms-2 lh-0 me-2 dark-text-white"></i>
+        
+        <div class="form-check form-switch">
+            <input class="form-check-input darkmode-switch dark" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+
+        </div>
+        <i class="bi bi-brightness-high-fill fs-4 ms-2 lh-0 dark-text-white "></i>
+        
+    </div>
+    <!-- Header -->
+    <header class="header text-gray dark-text-white">
+        <div class="container ">
+            <div class="row text-center">
+                <h2 class="fw-bold mb-4 "> <span class=" dark-text-white g">Lorem ipsum </span><span id="text"></span>
+                </h2>
+                <p class="lh-lg mt-5 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint hic
+                    sapiente.
+                    Doloribus consequuntur at obcaecati? Atque error esse beatae ex temporibus deserunt cumque rem cum
+                    dicta quos. Commodi excepturi ratione adipisci ad facere, cumque fugit quod earum itaque natus!</p>
+            </div>
+
+            <div class=" row countdown justify-content-center my-5 " id="countdown">
+                <div>
+                    <h3 class="fw-bold " id="days">0</h3>
+                    <h5 class="mb-0">day</h5>
+                </div>
+
+                <div>
+                    <h3 class="fw-bold" id="hours">0</h3>
+                    <h5>Houres</h5>
+                </div>
+                <div>
+                    <h3 class="fw-bold" id="Minutes">0</h3>
+                    <h5>Minutes</h5>
+                </div>
+                <div>
+                    <h3 class="fw-bold" id="seconds">0</h3>
+                    <h5>seconds</h5>
+                </div>
+            </div>
+            <div class="mainox" b>
+            </div>
+            <div class="alert alert-primary mainboxx" role="alert">
+
+                <h5 id="alert"> Du hast noch Zeit. probiere mal !</h5>
+
+            </div>
+
+            <div class="mainbox">
+                <div class="row">
+                    <dive class="col-12">
+                        <h6 class="mb-4 mt-5 dark-text-white fs-10">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ipsa, earum?</h6>
+                    </dive>
+                    <div>
+
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-success" type="button">gmail
+                            </button>
+                        </div>
+                        <input type="text" class="form-control " placeholder="" aria-label=""
+                            aria-describedby="basic-addon1">
+                    </div>
+
+                </div>
+            </div>
+            <!-- /* social Icons */ -->
+        </div>
+        <div class="social-icons ">
+            <a href="#" class="social-icon dark-text-white " id="instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="social-icon dark-text-white" id="github">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+
+
+    </header>
+
+    <section class="contact">
+        <div class="container my-5">
+            <div class="row text-center justify-content-center ">
+                <h2 class="fw-bold h-two dark-text-white mb-5 dark-text-white dark-text-white ">:. Contact us .:</h2>
+            </div>
+
+            <div class="row my-5">
+                <!-- Map -->
+                <div class="col-lg-5">
+                    <div class="card">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-geo-alt ms-2"></i>
+                            <div class="ms-2">
+                                <h5 class="fw-bold dark-text-white">Address:</h5>
+                                <p class="dark-text-white">Lorem ipsum, dolor sit amet consectetur .</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-geo-alt ms-2"></i>
+                            <div class="ms-2">
+                                <h5 class="fw-bold dark-text-white ">Email:</h5>
+                                <p class="dark-text-white ">Lorem ipsum @ dolor .com</p>
+                            </div>
+                        </div>
+                        <hr class="">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-geo-alt ms-2"></i>
+                            <div class="ms-2">
+                                <h5 class="fw-bold dark-text-white ">Anruf:</h5>
+                                <p class="dark-text-white">012-34567-89</p>
+                            </div>
+                        </div>
+
+                        <!-- Map-Leaflet-->
+                        <div id="map" style="height: 325px;">fdf</div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card-Form -->
+
+                <div class="col-lg-7">
+                    <form action="" class="card h-100">
+                        <div class="row">
+                            <div class="col-md-6 mt-3 mt-md-0">
+                                <label for="form-label fw-bold" for="name" class="mb-2 dark-text-white">Name : </label>
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    placeholder="Example input">
+                            </div>
+                            <div class="col-md-6 mt-3 mt-md-0">
+                                <label for="formGroupExampleInput" class="mb-2 dark-text-white">Example label :</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    placeholder="Example input">
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <label for="formGroupExampleInput " class="mb-2 dark-text-white">Example label</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                placeholder="Example input">
+                        </div>
+                        <div class="mt-3">
+                            <label for="formGroupExampleInput" class="mb-2 dark-text-white">Deine Kommentar:</label>
+                            <textarea type="text" class="form-control" id="formGroupExampleInput" rows="10"
+                                name="message" required=""></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-primary mt-5 mb-2"type="submit dark-text-white">Submit</button>
+                            </div>
+                        
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>

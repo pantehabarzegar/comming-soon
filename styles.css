@@ -1,0 +1,155 @@
+body {
+    background-color: rgb(236, 239, 234);
+}
+
+/* Dark Mode */
+ .dark .dark-bg-black{
+    background-color: #000 !important;
+}
+
+.dark .dark-text-white{
+    color: #fff !important;
+}
+
+.dark .dakr-bg-body-dark{
+    background-color: rgb(105, 108, 105);
+}
+
+.lh-0{
+    line-height: 0;
+}
+
+.darkmode-switch{
+width:3em !important;
+height:20px;
+}
+
+
+/* Header */
+.header{
+    padding-top: 90px;
+}
+
+.header .countdown div{
+    text-align: center;
+    border :2px solid rgba(35, 14, 221, 0.481);
+    border-radius: 8px;
+    margin: 10px 10px ;
+    width: 100px;
+    padding: 15px 0;
+}
+
+@media (max-width :575px){
+    .header .countdown div{
+       
+        
+        border-radius: 8px;
+        margin: 10px 10px ;
+        width: 70px;
+        padding: 10px 0;
+    }
+}
+
+
+.text-gray{
+color: #454345 !important;
+}
+
+/* Ityped */
+.ityped-cursor {
+    font-size: 2.2rem;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+.g{
+color: rgba(35, 14, 221, 0.481)!important;
+}
+.mainbox{
+    width: 500px;
+   border-radius: 5px;
+    box-sizing: border-box;
+    margin: auto;
+}
+.mainboxx{
+    width:600px;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    padding-bottom: 10px;
+    margin: auto;
+}
+/* social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: rgba(35, 14, 221, 0.481);
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: rgba(2, 0, 12, 0.481);
+}
+/* contact us */
+.contact .h-two{
+    
+    height: 5px;
+    
+}
+/* contact-card */
+.contact .card{
+    border-top: 4px solid  rgba(35, 14, 221, 0.481);
+    border-bottom: 4px solid  rgba(35, 14, 221, 0.481) ;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgba(212, 162, 162, 0.06);
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgb(0 0 0/12%);
+
+}
+
+.contact .card i{
+    font-size: 20px;
+    color: #4a05ca;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s;
+
+}
+
+.contact .card i:hover{
+    background: #e1d9ef;
+    border-color:#e2dfdc;
+color: #2b0376;
+    
+}
